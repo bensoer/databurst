@@ -9,11 +9,11 @@ public interface IDataburstable {
 
     void insert(IDataburstRecord entry);
 
-    void delete(IDataburstable entry);
+    void delete(IDataburstRecord entry);
 
-    void update(IDataburstable oldEntry, IDataburstable newEntry);
+    void update(IDataburstRecord oldEntry, IDataburstRecord newEntry);
 
-    List<IDataburstRecord> find(IDataburstable search);
+    List<IDataburstRecord> find(IDataburstRecord search);
 
-    IDataburstRecord findOne(IDataburstable search);
+    IDataburstRecord findOne(IDataburstRecord search);
 }
